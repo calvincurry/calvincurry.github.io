@@ -17,16 +17,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   class="w3-bar-item w3-button">Close Menu</a>
   <a href="/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
   <a href="/aboutMe" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
-  <a href="/project1" onclick="w3_close()" class="w3-bar-item w3-button">Project 1</a>
-  <a href="/project2" onclick="w3_close()" class="w3-bar-item w3-button">Project 2</a>
-  <a href="/project3" onclick="w3_close()" class="w3-bar-item w3-button">Project 3</a>
+  <a href="/project1" onclick="w3_close()" class="w3-bar-item w3-button">01: Project Management</a>
+  <a href="/project2" onclick="w3_close()" class="w3-bar-item w3-button">02: Laser Cutting</a>
+  <a href="/project3" onclick="w3_close()" class="w3-bar-item w3-button">03: Additive Manufacturing</a>
   <a href="/project4" onclick="w3_close()" class="w3-bar-item w3-button">04: Computer Aided Manufacturing</a>
-  <a href="/project5" onclick="w3_close()" class="w3-bar-item w3-button">Project 5</a>
-  <a href="/project6" onclick="w3_close()" class="w3-bar-item w3-button">Project 6</a>
-  <a href="/project7" onclick="w3_close()" class="w3-bar-item w3-button">Project 7</a>
-  <a href="/project8" onclick="w3_close()" class="w3-bar-item w3-button">Project 8</a>
-  <a href="/project9" onclick="w3_close()" class="w3-bar-item w3-button">Project 9</a>
-  <a href="/project10" onclick="w3_close()" class="w3-bar-item w3-button">Project 10</a>
+  <a href="/project5" onclick="w3_close()" class="w3-bar-item w3-button">05: Subtractive Manufacturing</a>
+  <a href="/project6" onclick="w3_close()" class="w3-bar-item w3-button">06: ???</a>
+  <a href="/project7" onclick="w3_close()" class="w3-bar-item w3-button">07: Laser Cutting 2D</a>
+  <a href="/project8" onclick="w3_close()" class="w3-bar-item w3-button">08: Laser Cutting 3D</a>
+  <a href="/project9" onclick="w3_close()" class="w3-bar-item w3-button">09: Electronics Production</a>
+  <a href="/project10" onclick="w3_close()" class="w3-bar-item w3-button">10: Electronics Programming</a>
 </nav>
 
 <!-- Top menu -->
@@ -43,7 +43,57 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   
 
   <!--BEGINNING OF PAGE-SPECIFIC CONTENT-->
-  <p>Project 1!</p>
+  <p><h1>Project 1: Project Management</h1>
+    <h4>Build a website to post documentation of work done for Introduction to Digital Fabrication.
+      Become familiar with web design tools, and gain exposure to common workflows in this field. 
+    </h4>
+  </p>
+  <p>
+    <h2>Setting Up</h2>
+    Before building the website itself, first I had to make sure that all the tools necessary for building a website were in order.
+    Specifically, I needed somewhere to host the site, an editor to make changes to the website code, and a way to push changes I made
+    in my editor onto the hosting service. <br/>
+
+    For this course, we are using Github pages to host our website. GitHub pages hosts websites with small file sizes and bandwidth needs
+    for free, and allows easy access to the repository where the website is stored to update the code. To push changes to the online 
+    repository, we used git. Because I am on a Windows PC, I first downloaded gitbash, a client for inputting git commands. From the client, 
+    I was able to clone the online repository to my local storage, and then use git commit and git push commands to upload any changes I 
+    made to my online repository.<br/>
+
+    Finally, with a quick way to push new versions of the website, I needed to set up an editor to write HTML code for the website. I chose 
+    to use VSCode, and installed an extension called 'Live Server,' which would allow me to see changes to the website locally and
+    in real-time. With everything set up, it was time to start building the website itself. <br/>
+
+    <h2>CSS Templates</h2>
+    Given the limied time we had to complete this first project, I chose to use a CSS template, rather than code a website from scratch
+    myself. While I had a very basic understanding of HTML code before beginning this project, I am unfamilliar with using JavaScript for 
+    web design, and a pre-defined template would reduce the time I needed to spend on finnicky aesthetic details. For my template, I chose
+    the 'Food Blog' CSS template, <a href="https://www.w3schools.com/w3css/w3css_templates.asp">available for free thanks to w3schools.</a> 
+    This template has space for several links/images front and center on the home page. Because the vast majority of the content on this
+    website will be devoted to documentation for week-to-week projects, I figured they deserved the primary focus in the layout. The template
+    also comes with a sidebar, giving users multiple ways to navigate the site. <br/>
+
+    <h2>Building the Site</h2>
+    I first read through the template to find the blocks of code corresponding to each element of the site, and to get a basic idea of
+    how all of it functioned. From here, I began to tweak parts of the layout I intended to use, and deleted a couple that I thought were 
+    unnecessary. I expanded the sidebar to include a link for every project, then played around with the panels on the home page until I 
+    found a layout I was happy with. This was done as much by using Ctrl + f in the w3schools stylesheet to look for used and unused 
+    classes, as it was by writing blocks of code myself. I ended up removing pagination from the homepage entirely, so all 10 projects 
+    are visible as soon as users open the site. I added links to the panel for every project, so that the project pages could be reached 
+    from the panels on the home page, or from the sidebar. <br/>
+
+    The biggest roadblock I ran in to was the use of scripting to make the sidebar and footer content appear on every page, and have changes to
+    these elements automatically update across all pages. Without server side permissions, this has to be done using a JavaScript function.
+    Given my lack of experience with JavaScript, I was unable to make the function work how I wanted, and updated each page by hand after
+    I was satisfied with the sidebar and footer. Outside of my scripting woes, this project helped me better understand CSS code, and how
+    to use git to push new versions of a project to a remote repository. This was my first time using git and git commands, but is is clear
+    that this workflow could be very beneficial in a collaborative project. <br/>
+
+    I hope to do a bit more editing of the site going forward, (adding images, here and on the home page!) but I am out of time
+    for this week. 
+     
+
+  </p>
   <!--END OF PAGE-SPECIFIC CONTENT-->
   
   <!-- Footer -->
